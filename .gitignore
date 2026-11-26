@@ -1,0 +1,7 @@
+# Dependencies for the headless test suite (see COVEXCODE.md)
+node_modules/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

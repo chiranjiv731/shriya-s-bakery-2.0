@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu — Shirya's Bakery</title>
+<meta name="description" content="The full case at Shirya's Bakery: naturally leavened breads, laminated pastries, cakes and sweets, savoury bakes and drinks. Add to your basket and order for pickup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-tokens.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/index.html">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 21V11"/>
+        <path d="M12 11c0-3 2-5 5-5 0 3-2 5-5 5Z"/>
+        <path d="M12 11c0-3-2-5-5-5 0 3 2 5 5 5Z"/>
+        <path d="M12 15c0-2 1.5-3.5 3.5-3.5 0 2-1.5 3.5-3.5 3.5Z"/>
+        <path d="M12 15c0-2-1.5-3.5-3.5-3.5 0 2 1.5 3.5 3.5 3.5Z"/>
+      </svg>
+      <span>Shirya<em>'s</em> Bakery</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/menu.html" aria-current="page">Menu</a></li>
+      <li><a href="/contact.html">Contact us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cart-btn" type="button" data-cart-open aria-label="Open your basket">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 8h16l-1.5 11a2 2 0 0 1-2 1.8h-9A2 2 0 0 1 5.5 19Z"/>
+          <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+        </svg>
+        <span class="btn-label">Basket</span>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">The menu</p>
+      <h1>Everything in the case</h1>
+      <p class="lede">The list changes with what's good that week — the breads and the morning buns are permanent, most of the rest comes and goes. Add what you want, then pick a time to collect it.</p>
+    </div>
+  </section>
+
+  <div class="wrap menu-body">
+
+    <section class="menu-cat" aria-labelledby="breads">
+      <div class="menu-cat-head">
+        <h2 id="breads">Breads</h2>
+        <p class="menu-cat-note">Whole loaves from 7am · sliced on request</p>
+      </div>
+      <ul class="menu-list">
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/sourdough.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Country Sourdough</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹340</span>
+            </div>
+            <p class="menu-desc">Stone-milled wheat, 48-hour cold ferment, blistered crust. The one we're known for.</p>
+            <ul class="tags"><li class="tag">Vegan</li><li class="tag">Daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="sourdough"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/rye.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Seeded Rye &amp; Molasses</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹380</span>
+            </div>
+            <p class="menu-desc">Dark, dense and slightly sweet. Sunflower, flax and cracked coriander seed through the crumb.</p>
+            <ul class="tags"><li class="tag">Vegan</li><li class="tag">Keeps 4 days</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="rye"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/fougasse.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Olive &amp; Rosemary Fougasse</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹260</span>
+            </div>
+            <p class="menu-desc">Shaped like a leaf, torn open at the table. Kalamata olives, rosemary from the window box.</p>
+            <ul class="tags"><li class="tag">Vegan</li><li class="tag">Fri–Sun</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="fougasse"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/milk-bread.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Milk Bread, Pullman</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹300</span>
+            </div>
+            <p class="menu-desc">Tangzhong method, feather-soft, cut thick for toast. Sold by the half loaf after 3pm.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="milk-bread"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="menu-cat" aria-labelledby="pastries">
+      <div class="menu-cat-head">
+        <h2 id="pastries">Pastries &amp; viennoiserie</h2>
+        <p class="menu-cat-note">Laminated by hand, three days from mix to case</p>
+      </div>
+      <ul class="menu-list">
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/morning-bun.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Cardamom Morning Bun</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹180</span>
+            </div>
+            <p class="menu-desc">Twenty-seven layers, orange zest and green cardamom sugar, demerara on top.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Bestseller</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="morning-bun"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/croissant.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Butter Croissant</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹150</span>
+            </div>
+            <p class="menu-desc">Cultured butter, proofed overnight, baked until the seams split. Nothing else in it.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="croissant"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/kouign-amann.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Kouign-amann</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹200</span>
+            </div>
+            <p class="menu-desc">Caramelised on the bottom, salty at the edges. Saturdays only, and they go by ten.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Saturday</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="kouign-amann"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/pain-au-chocolat.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Pain au Chocolat</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹170</span>
+            </div>
+            <p class="menu-desc">Two batons of 64% dark chocolate in place of the sugar. Served warm until 9am.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="pain-au-chocolat"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="menu-cat" aria-labelledby="cakes">
+      <div class="menu-cat-head">
+        <h2 id="cakes">Cakes &amp; sweets</h2>
+        <p class="menu-cat-note">Sold by the slice · whole cakes need 72 hours</p>
+      </div>
+      <ul class="menu-list">
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/pistachio-cake.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Pistachio &amp; Rose Cake</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹260</span>
+            </div>
+            <p class="menu-desc">Four thin semolina layers, whipped mascarpone, salted pistachio praline, rose water. Whole cake ₹2,400 — ring us for that.</p>
+            <ul class="tags"><li class="tag">Contains nuts</li><li class="tag">Signature</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="pistachio-cake"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/basque-cheesecake.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Burnt Basque Cheesecake</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹280</span>
+            </div>
+            <p class="menu-desc">Baked hot and fast until the top goes almost black. Custardy in the middle, no crust at all.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="basque-cheesecake"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/brownie.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Chocolate Rye Brownie</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹160</span>
+            </div>
+            <p class="menu-desc">Made with the rye flour and 70% chocolate. Flaky salt on top, fudgy all the way through.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="brownie"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/almond-orange-cake.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Almond &amp; Orange Cake</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹220</span>
+            </div>
+            <p class="menu-desc">Flourless, syrup-soaked, keeps a week. Our answer to everyone who asks for gluten-free.</p>
+            <ul class="tags"><li class="tag">Gluten-free</li><li class="tag">Contains nuts</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="almond-orange-cake"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="menu-cat" aria-labelledby="savoury">
+      <div class="menu-cat-head">
+        <h2 id="savoury">Savoury</h2>
+        <p class="menu-cat-note">From the counter, served warm until 2pm</p>
+      </div>
+      <ul class="menu-list">
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/focaccia.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Honey &amp; Sea Salt Focaccia</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹220</span>
+            </div>
+            <p class="menu-desc">Dimpled, olive-oiled, wildflower honey and Maldon salt. Cut into thick fingers to share.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Twice daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="focaccia"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/spinach-roll.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Spinach &amp; Feta Roll</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹190</span>
+            </div>
+            <p class="menu-desc">Laminated like a croissant, filled with wilted spinach, feta and toasted nigella.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Daily</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="spinach-roll"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/grilled-cheese.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Sourdough Grilled Cheese</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹260</span>
+            </div>
+            <p class="menu-desc">Two-day-old country loaf, aged cheddar and a little mustard pickle. Pressed to order.</p>
+            <ul class="tags"><li class="tag">Vegetarian</li><li class="tag">Till 2pm</li></ul>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="grilled-cheese"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="menu-cat" aria-labelledby="drinks">
+      <div class="menu-cat-head">
+        <h2 id="drinks">Drinks</h2>
+        <p class="menu-cat-note">Two seats by the window, no laptops after noon</p>
+      </div>
+      <ul class="menu-list">
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/coffee.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Filter Coffee</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹120</span>
+            </div>
+            <p class="menu-desc">Single origin from Chikmagalur, brewed by the pot. Bottomless if you're sitting in.</p>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="coffee"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/chai.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Cardamom Chai</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹90</span>
+            </div>
+            <p class="menu-desc">Boiled the long way with green cardamom, ginger and Assam leaves. Sweet by default.</p>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="chai"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+        <li class="menu-item reveal">
+          <div class="menu-thumb"><img src="/assets/img/lassi.jpg" width="88" height="88" loading="lazy" alt=""></div>
+          <div class="menu-main">
+            <div class="menu-item-row">
+              <span class="menu-name">Salted Lassi</span>
+              <span class="leader" aria-hidden="true"></span>
+              <span class="menu-price">₹130</span>
+            </div>
+            <p class="menu-desc">Thick curd, roasted cumin, black salt. The best thing on a hot afternoon.</p>
+          </div>
+          <div class="menu-item-side">
+            <button class="add-btn" type="button" data-add="lassi"><span class="add-label">Add</span></button>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <aside class="menu-foot">
+      <h3>Allergies and all that</h3>
+      <p>Everything here is baked in one kitchen, so we can't promise anything is free from traces of wheat, dairy, eggs or nuts. Tell the counter about an allergy and we'll tell you honestly whether we can help. Whole celebration cakes are made to order — 72 hours' notice and a conversation about what you actually want.</p>
+    </aside>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/index.html"><span>Shirya<em>'s</em> Bakery</span></a>
+        <p style="margin-top: var(--space-3);">Small batches, slow proof, no shortcuts. Baked on Alder Lane since 1998.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul class="footer-links">
+          <li>14 Alder Lane, Fort</li>
+          <li>Mumbai 400001</li>
+          <li><a href="tel:+912240001998">+91 22 4000 1998</a></li>
+          <li><a href="mailto:hello@shiryasbakery.com">hello@shiryasbakery.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/menu.html">Menu &amp; prices</a></li>
+          <li><a href="/order.html">Order for pickup</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+          <li><a href="/contact.html#wholesale">Wholesale &amp; cakes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 Shirya's Bakery · <a href="/credits.html">Photo credits</a></span>
+      <span>Tue–Sun, 7:00–19:00 · Closed Monday</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shirya's Bakery — slow bread, small batches, Alder Lane</title>
+<meta name="description" content="Shirya's Bakery is a small-batch neighbourhood bakery on Alder Lane. Naturally leavened loaves, laminated pastries and celebration cakes, baked fresh every morning. Order for pickup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/design-tokens.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/index.html">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+        <path d="M12 21V11"/>
+        <path d="M12 11c0-3 2-5 5-5 0 3-2 5-5 5Z"/>
+        <path d="M12 11c0-3-2-5-5-5 0 3 2 5 5 5Z"/>
+        <path d="M12 15c0-2 1.5-3.5 3.5-3.5 0 2-1.5 3.5-3.5 3.5Z"/>
+        <path d="M12 15c0-2-1.5-3.5-3.5-3.5 0 2 1.5 3.5 3.5 3.5Z"/>
+      </svg>
+      <span>Shirya<em>'s</em> Bakery</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/index.html" aria-current="page">Home</a></li>
+      <li><a href="/menu.html">Menu</a></li>
+      <li><a href="/contact.html">Contact us</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="cart-btn" type="button" data-cart-open aria-label="Open your basket">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M4 8h16l-1.5 11a2 2 0 0 1-2 1.8h-9A2 2 0 0 1 5.5 19Z"/>
+          <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
+        </svg>
+        <span class="btn-label">Basket</span>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Alder Lane · since 1998</p>
+        <h1>Bread that takes its <em>sweet</em> time.</h1>
+        <p class="lede">Forty loaves a morning, laminated by hand, baked in a stone hearth oven. We start the levain on Tuesday so you can tear into it on Sunday.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="/menu.html">Order for pickup</a>
+          <a class="btn btn-secondary" href="/contact.html">Visit the shop</a>
+        </div>
+
+        <dl class="proof">
+          <div><dt>48 hrs</dt><dd>Cold ferment</dd></div>
+          <div><dt>4:30 am</dt><dd>Ovens on</dd></div>
+          <div><dt>26 yrs</dt><dd>Same corner</dd></div>
+        </dl>
+      </div>
+
+      <div class="hero-art" data-parallax>
+        <div class="arch" data-tilt="4">
+          <img src="/assets/img/hero-counter.jpg" width="1280" height="960" fetchpriority="high"
+               alt="The morning's bakes laid out along the bakery counter.">
+        </div>
+        <p class="hero-stamp">Hearth baked daily</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="case-strip">
+    <div class="wrap">
+      <p><strong>In the case today</strong></p>
+      <ul class="case-items">
+        <li>Cardamom morning buns</li>
+        <li>Country sourdough</li>
+        <li>Pistachio &amp; rose cake by the slice</li>
+        <li class="sold-out">Kouign-amann (back Saturday)</li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="section" id="signature">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">The signature four</p>
+          <h2>What we're known for</h2>
+          <p>Four things we would be quietly devastated to stop making.</p>
+        </div>
+        <a class="btn btn-secondary btn-sm" href="/menu.html">Full menu</a>
+      </div>
+
+      <ul class="dish-grid">
+        <li class="dish reveal" data-tilt="5" style="--reveal-delay: 0ms">
+          <div class="dish-media">
+            <img src="/assets/img/morning-bun.jpg" width="1280" height="964" loading="lazy"
+                 alt="A baked cardamom morning bun.">
+            <span class="dish-price-tag">₹180</span>
+          </div>
+          <div class="dish-body">
+            <h3>Cardamom Morning Bun</h3>
+            <p class="dish-desc">Twenty-seven layers of laminated dough, orange zest and green cardamom sugar rolled through, finished with a crack of demerara.</p>
+            <div class="dish-actions">
+              <ul class="tags"><li class="tag">Bakes at 6am</li><li class="tag">Veg</li></ul>
+              <button class="add-btn" type="button" data-add="morning-bun">
+                <span class="add-label">Add</span>
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="dish reveal" data-tilt="5" style="--reveal-delay: 80ms">
+          <div class="dish-media">
+            <img src="/assets/img/sourdough.jpg" width="1280" height="960" loading="lazy"
+                 alt="A country sourdough loaf with a dark scored crust.">
+            <span class="dish-price-tag">₹340</span>
+          </div>
+          <div class="dish-body">
+            <h3>Country Sourdough</h3>
+            <p class="dish-desc">Stone-milled wheat and a 48-hour cold ferment. A blistered crust that shatters and a crumb soft enough to eat with nothing on it.</p>
+            <div class="dish-actions">
+              <ul class="tags"><li class="tag">Naturally leavened</li><li class="tag">Vegan</li></ul>
+              <button class="add-btn" type="button" data-add="sourdough">
+                <span class="add-label">Add</span>
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="dish reveal" data-tilt="5" style="--reveal-delay: 160ms">
+          <div class="dish-media">
+            <img src="/assets/img/pistachio-cake.jpg" width="1280" height="960" loading="lazy"
+                 alt="A slice of pistachio cake.">
+            <span class="dish-price-tag">₹260</span>
+          </div>
+          <div class="dish-body">
+            <h3>Pistachio &amp; Rose Cake</h3>
+            <p class="dish-desc">Four thin semolina layers, whipped mascarpone, salted pistachio praline and a whisper of rose water. Sold by the slice, made whole to order.</p>
+            <div class="dish-actions">
+              <ul class="tags"><li class="tag">By the slice</li><li class="tag">Nuts</li></ul>
+              <button class="add-btn" type="button" data-add="pistachio-cake">
+                <span class="add-label">Add</span>
+              </button>
+            </div>
+          </div>
+        </li>
+
+        <li class="dish reveal" data-tilt="5" style="--reveal-delay: 240ms">
+          <div class="dish-media">
+            <img src="/assets/img/focaccia.jpg" width="1280" height="964" loading="lazy"
+                 alt="A tray of dimpled focaccia bread.">
+            <span class="dish-price-tag">₹220</span>
+          </div>
+          <div class="dish-body">
+            <h3>Honey &amp; Sea Salt Focaccia</h3>
+            <p class="dish-desc">Dimpled, olive-oiled and baked in the tray it rises in. Wildflower honey and Maldon salt over the top, cut into thick fingers.</p>
+            <div class="dish-actions">
+              <ul class="tags"><li class="tag">Twice daily</li><li class="tag">Veg</li></ul>
+              <button class="add-btn" type="button" data-add="focaccia">
+                <span class="add-label">Add</span>
+              </button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap story-grid">
+      <div class="story-photo reveal">
+        <img src="/assets/img/shop-counter.jpg" width="1280" height="1707" loading="lazy"
+             alt="The bakery counter with its display of bread and pastries.">
+      </div>
+
+      <div class="reveal" style="--reveal-delay: 100ms">
+        <p class="eyebrow">The bakery</p>
+        <h2>Three ovens, one corner, since 1998</h2>
+        <p>Shirya opened on Alder Lane with a single deck oven and a stubborn refusal to use commercial yeast. The shop has grown a second storey and a pastry bench since then; the levain is descended from the same starter.</p>
+        <p>Everything is mixed the afternoon before, retarded overnight in the cold room, and baked through the morning so the shelves are full by seven. What doesn't sell, we take to the shelter on Moti Street at closing.</p>
+        <ul class="story-list" style="margin-top: var(--space-6);">
+          <li>
+            <h4>One starter, twenty-six years</h4>
+            <p>Fed twice a day, named Doris, and never once bought off a shelf.</p>
+          </li>
+          <li>
+            <h4>Stone-milled, locally grown</h4>
+            <p>Wheat and rye from a farm two hours out, milled weekly and used within the fortnight.</p>
+          </li>
+          <li>
+            <h4>Nothing baked for tomorrow</h4>
+            <p>If it isn't sold by seven, it goes to the shelter. We would rather run out than stale.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Regulars</p>
+          <h2>What the neighbourhood says</h2>
+        </div>
+      </div>
+      <div class="quotes">
+        <blockquote class="quote reveal">
+          <p>“The country loaf is the only reason I still walk to work. I have rerouted my commute.”</p>
+          <footer>Ritu M. — Alder Lane</footer>
+        </blockquote>
+        <blockquote class="quote reveal" style="--reveal-delay: 90ms">
+          <p>“We ordered the pistachio cake for my mother's seventieth and there were four crumbs left.”</p>
+          <footer>Aman &amp; Kiran S. — Fort</footer>
+        </blockquote>
+        <blockquote class="quote reveal" style="--reveal-delay: 180ms">
+          <p>“I've been buying the same morning bun every Saturday for nine years. It has never once been off.”</p>
+          <footer>Joan D. — Mazgaon</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit-band">
+    <div class="wrap">
+      <div>
+        <h2>Open Tuesday to Sunday, 7am to 7pm</h2>
+        <p>14 Alder Lane, Fort. Closed Mondays — the ovens need a rest too.</p>
+      </div>
+      <a class="btn btn-primary" href="/order.html">Start a pickup order</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="/index.html"><span>Shirya<em>'s</em> Bakery</span></a>
+        <p style="margin-top: var(--space-3);">Small batches, slow proof, no shortcuts. Baked on Alder Lane since 1998.</p>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul class="footer-links">
+          <li>14 Alder Lane, Fort</li>
+          <li>Mumbai 400001</li>
+          <li><a href="tel:+912240001998">+91 22 4000 1998</a></li>
+          <li><a href="mailto:hello@shiryasbakery.com">hello@shiryasbakery.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/menu.html">Menu &amp; prices</a></li>
+          <li><a href="/order.html">Order for pickup</a></li>
+          <li><a href="/contact.html">Contact us</a></li>
+          <li><a href="/contact.html#wholesale">Wholesale &amp; cakes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 Shirya's Bakery · <a href="/credits.html">Photo credits</a></span>
+      <span>Tue–Sun, 7:00–19:00 · Closed Monday</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/site.js" defer></script>
+</body>
+</html>
